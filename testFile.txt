@@ -1,0 +1,2 @@
+This is a sample file for the testing of the test java application.
+File is read successfully!!!

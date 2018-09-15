@@ -1,0 +1,16 @@
+package testJavaApp;
+
+public class FileHandler {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String fileName = "";
+		FileHandler obj = new FileHandler();
+		obj.readFile(fileName);
+	}
+	
+	public void readFile(String fileName) {
+		
+	}
+}
