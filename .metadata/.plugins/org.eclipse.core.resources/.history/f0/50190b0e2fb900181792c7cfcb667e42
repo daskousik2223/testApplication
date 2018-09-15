@@ -22,7 +22,6 @@ public class FileHandler {
 			while((readLine = rdr.readLine()) != null){
 				System.out.println(readLine);
 			}
-			System.out.println("Completed file reading.......");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
