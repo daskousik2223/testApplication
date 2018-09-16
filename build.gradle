@@ -10,5 +10,13 @@ plugins {
 	id "application"
 }
 
+sourceSets {
+    main {
+        java {
+            srcDirs = ['testAppclient/appClientModule']
+        }
+	}
+}
+
 mainClassName = 'myexamples.testapp.client.FileHandler'
 
