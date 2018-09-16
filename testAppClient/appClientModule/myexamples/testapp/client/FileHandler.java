@@ -17,8 +17,9 @@ public class FileHandler {
 	
 	public void readFile(String fileName) {
 		String readLine = null;
+		BufferedReader rdr = null;
 		try {
-			BufferedReader rdr = new BufferedReader(new FileReader(new File(fileName)));
+			rdr = new BufferedReader(new FileReader(new File(fileName)));
 			while((readLine = rdr.readLine()) != null){
 				System.out.println(readLine);
 			}
@@ -26,6 +27,14 @@ public class FileHandler {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+		finally {
+			try {
+				rdr.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 }
