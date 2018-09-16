@@ -1,7 +1,7 @@
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
-@rem  TestApplication1 startup script for Windows
+@rem  FileHandlerTestApp startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -13,7 +13,7 @@ if "%DIRNAME%" == "" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%..
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and TEST_APPLICATION1_OPTS to pass JVM options to this script.
+@rem Add default JVM options here. You can also use JAVA_OPTS and FILE_HANDLER_TEST_APP_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
@@ -63,19 +63,19 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\TestApplication1.jar
+set CLASSPATH=%APP_HOME%\lib\FileHandlerTestApp.jar
 
-@rem Execute TestApplication1
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %TEST_APPLICATION1_OPTS%  -classpath "%CLASSPATH%" myexamples.testapp.client.FileHandler %CMD_LINE_ARGS%
+@rem Execute FileHandlerTestApp
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %FILE_HANDLER_TEST_APP_OPTS%  -classpath "%CLASSPATH%" myexamples.testapp.client.FileHandler %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
 if "%ERRORLEVEL%"=="0" goto mainEnd
 
 :fail
-rem Set variable TEST_APPLICATION1_EXIT_CONSOLE if you need the _script_ return code instead of
+rem Set variable FILE_HANDLER_TEST_APP_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-if  not "" == "%TEST_APPLICATION1_EXIT_CONSOLE%" exit 1
+if  not "" == "%FILE_HANDLER_TEST_APP_EXIT_CONSOLE%" exit 1
 exit /b 1
 
 :mainEnd
